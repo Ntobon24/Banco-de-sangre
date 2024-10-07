@@ -8,7 +8,7 @@ function App() {
     <>
       <div>
       
-        <a href="https://react.dev" target="_blank">
+        <a href="https://github.com/Ntobon24/Banco-de-sangre" target="_blank">
           <img src="src\assets\sangre.png" className="logo banco de sangre" alt="banco de sangre logo" />
         </a>
       </div>
@@ -25,7 +25,7 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Click en el logo para mas informacion
       </p>
     </>
   )
