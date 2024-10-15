@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.main-section {
+    padding: 40px 20px;
+    background-color: #F9F9F9;
+    text-align: center;
+}
+
+.main-section h2 {
+    color: #E53F3F;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.donate-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.donate-now img {
+    width: 50px;
+}
+
+.donate-button {
+    background-color: #E53F3F;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.facts-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.facts-section h3 {
+    color: #E53F3F;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.facts-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.campaigns-section {
+    padding: 40px 20px;
+    background-color: #F9F9F9;
+    text-align: left;
+}
+
+.campaigns-section h3 {
+    color: #E53F3F;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.campaign {
+    border: 1px solid #E53F3F;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.campaign p {
+    font-size: 16px;
+}
+
+.campaign strong {
+    color: #E53F3F;
+}
+
+p {
+    color: black;
+}
