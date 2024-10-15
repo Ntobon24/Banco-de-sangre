@@ -5,11 +5,22 @@ import PaginaPrincipal from './components/Pagina-principal/Pagina-principal'
 import PaginaCampañas from './components/Pagina-campañas/Pagina-campañas'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentPage, setCurrentPage] = useState('principal')
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'campañas':
+        return <PaginaCampañas />
+      case 'principal':
+      default:
+        return <PaginaPrincipal />
+    }
+  }
 
   return (
     <>
-      <PaginaCampañas/>
+      <Header setCurrentPage={setCurrentPage} />
+      {renderPage()}
     </>
   )
 }

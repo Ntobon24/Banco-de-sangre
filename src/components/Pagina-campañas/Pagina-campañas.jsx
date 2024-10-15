@@ -5,9 +5,7 @@ import './Pagina-campañas.css';
 function PaginaCampañas() {
     return (
         <div>
-            <div>
-                <Header/> 
-            </div>
+            
             <div>
                 <section class="campaigns-section">
                     <div class="container">

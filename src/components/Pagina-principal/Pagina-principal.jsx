@@ -6,9 +6,6 @@ function PaginaPrincipal() {
     return (
         <div>
             <div>
-                <Header />
-            </div>
-            <div>
                 <section class="main-section">
                    <div class="container">
                        <h2>¿POR QUÉ DONAR?</h2>
