@@ -1,0 +1,23 @@
+.campaign-card {
+    border: 1px solid #E53F3F;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.campaign-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.campaign-info p {
+    margin: 5px 0;
+}
+
+.campaign-info strong {
+    color: #E53F3F;
+}

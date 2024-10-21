@@ -8,6 +8,7 @@
     padding: 40px 20px;
     background-color: #F9F9F9;
     text-align: center;
+    display: flex;
 }
 
 .main-section h2 {
@@ -19,6 +20,9 @@
 .main-section p {
     font-size: 18px;
     margin-bottom: 30px;
+    text-align: justify;
+    margin: 10px;
+    
 }
 
 .donate-now {
@@ -32,6 +36,22 @@
     width: 50px;
 }
 
+.container {
+    width: 60%; 
+}
+
+.additional-content {
+    width: 40%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.additional-content img {
+    max-width: 100%; 
+    height: auto;
+}
+
 .donate-button {
     background-color: #E53F3F;
     color: white;
@@ -39,45 +59,57 @@
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    
 }
 
-.facts-section {
-    padding: 40px 20px;
-    background-color: #fff;
-    text-align: left;
+.donate-button:hover {
+    color: white; 
+    text-decoration: none; 
 }
 
-.facts-section h3 {
-    color: #E53F3F;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
 
-.facts-section p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.campaigns-section {
+.combined-section {
+    display: flex; 
     padding: 40px 20px;
     background-color: #F9F9F9;
     text-align: left;
 }
 
-.campaigns-section h3 {
+.facts-content {
+    width: 40%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facts-content .container p {
+    text-align: justify; 
+}
+
+.campaigns-content {
+    width: 60%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.combined-section h3 {
     color: #E53F3F;
     font-size: 22px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .campaign {
     border: 1px solid #E53F3F;
     padding: 20px;
     margin-bottom: 20px;
+    margin-left: 40px;
 }
 
 .campaign p {
     font-size: 16px;
+
 }
 
 .campaign strong {

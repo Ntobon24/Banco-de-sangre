@@ -1,80 +1,71 @@
 import React from 'react';
-import Header from '../header/header';
 import './Pagina-campañas.css';
+import Tarjetacampaña from '../Tarjeta-campaña/Tarjeta-campaña';
 
 function PaginaCampañas() {
     return (
-        <div>
-            
+        <div>  
             <div>
                 <section class="campaigns-section">
                     <div class="container">
                         <h2>Campañas y solicitudes en curso</h2>
                         <div class="campaign-grid">
-                            <div class="campaign-card">
-                                <div class="campaign-info">
-                                    <p><strong>Sangre:</strong> A+</p>
-                                    <p><strong>Hospital:</strong> Pablo Tobón Uribe</p>
-                                    <p><strong>Fecha:</strong> 18/09/2024 - 22/09/2024</p>
-                                    <p><strong>Cantidad:</strong> 5 Litros</p>
-                                </div>
-                            </div>
-                            <div class="campaign-card">
-                                <div class="campaign-info">
-                                    <p><strong>Sangre:</strong> A-</p>
-                                    <p><strong>Hospital:</strong> Las Américas AUNA</p>
-                                    <p><strong>Fecha:</strong> 20/09/2024 - 24/09/2024</p>
-                                    <p><strong>Cantidad:</strong> 1 Litro</p>
-                                </div>
-                            </div>
-                            <div class="campaign-card">
-                                <div class="campaign-info">
-                                    <p><strong>Sangre:</strong> B+</p>
-                                    <p><strong>Hospital:</strong> Hospital General de Medellín</p>
-                                    <p><strong>Fecha:</strong> 26/09/2024 - 30/09/2024</p>
-                                    <p><strong>Cantidad:</strong> 15 Litros</p>
-                                </div>
-                            </div>
-                            <div class="campaign-card">
-                                <div class="campaign-info">
-                                    <p><strong>Sangre:</strong> B-</p>
-                                    <p><strong>Hospital:</strong> San Vicente Fundación</p>
-                                    <p><strong>Fecha:</strong> 30/09/2024 - 01/10/2024</p>
-                                    <p><strong>Cantidad:</strong> 2 Litros</p>
-                                </div>
-                            </div>
-                            <div class="campaign-card">
-                                <div class="campaign-info">
-                                    <p><strong>Sangre:</strong> AB+</p>
-                                    <p><strong>Hospital:</strong> Clínica León XIII</p>
-                                    <p><strong>Fecha:</strong> 02/10/2024 - 04/10/2024</p>
-                                    <p><strong>Cantidad:</strong> 9 Litros</p>
-                                </div>
-                            </div>
-                            <div class="campaign-card">
-                                <div class="campaign-info">
-                                    <p><strong>Sangre:</strong> AB-</p>
-                                    <p><strong>Hospital:</strong> Clínica Las Américas</p>
-                                    <p><strong>Fecha:</strong> 10/10/2024 - 14/10/2024</p>
-                                    <p><strong>Cantidad:</strong> 1.5 Litros</p>
-                                </div>
-                            </div>
-                            <div class="campaign-card">
-                                <div class="campaign-info">
-                                    <p><strong>Sangre:</strong> O+</p>
-                                    <p><strong>Hospital:</strong> Pablo Tobón Uribe</p>
-                                    <p><strong>Fecha:</strong> 18/10/2024 - 22/10/2024</p>
-                                    <p><strong>Cantidad:</strong> 1.5 Litros</p>
-                                </div>
-                            </div>
-                            <div class="campaign-card">
-                                <div class="campaign-info">
-                                    <p><strong>Sangre:</strong> O-</p>
-                                    <p><strong>Hospital:</strong> San Vicente Fundación</p>
-                                    <p><strong>Fecha:</strong> 18/10/2024 - 24/10/2024</p>
-                                    <p><strong>Cantidad:</strong> 20 Litros</p>
-                                </div>
-                            </div>
+                            <Tarjetacampaña
+                                sangre="A+"
+                                hospital="Pablo Tobón Uribe"
+                                fecha="18/09/2024 - 22/09/2024"
+                                cantidad="5 Litros"
+                                imagen="src\assets\hospital_pablotobonuribe.png"
+                            />
+                            <Tarjetacampaña
+                                sangre="A-"
+                                hospital="Las Américas AUNA"
+                                fecha="20/09/2024 - 24/09/2024"
+                                cantidad="1 Litro"
+                                imagen="src\assets\hospital_pablotobonuribe.png"
+                            />
+                            <Tarjetacampaña
+                                sangre="B+"
+                                hospital="Hospital General de Medellín"
+                                fecha="26/09/2024 - 30/09/2024"
+                                cantidad="15 Litros"
+                                imagen="src\assets\hospital_pablotobonuribe.png"
+                            />
+                            <Tarjetacampaña
+                                sangre="A+"
+                                hospital="Pablo Tobón Uribe"
+                                fecha="18/09/2024 - 22/09/2024"
+                                cantidad="5 Litros"
+                                imagen="src\assets\hospital_pablotobonuribe.png"
+                            />
+                            <Tarjetacampaña
+                                sangre="A-"
+                                hospital="Las Américas AUNA"
+                                fecha="20/09/2024 - 24/09/2024"
+                                cantidad="1 Litro"
+                                imagen="src\assets\hospital_pablotobonuribe.png"
+                            />
+                            <Tarjetacampaña
+                                sangre="B+"
+                                hospital="Hospital General de Medellín"
+                                fecha="26/09/2024 - 30/09/2024"
+                                cantidad="15 Litros"
+                                imagen="src\assets\hospital_pablotobonuribe.png"
+                            />
+                            <Tarjetacampaña
+                                sangre="A-"
+                                hospital="Las Américas AUNA"
+                                fecha="20/09/2024 - 24/09/2024"
+                                cantidad="1 Litro"
+                                imagen="src\assets\hospital_pablotobonuribe.png"
+                            />
+                            <Tarjetacampaña
+                                sangre="B+"
+                                hospital="Hospital General de Medellín"
+                                fecha="26/09/2024 - 30/09/2024"
+                                cantidad="15 Litros"
+                                imagen="src\assets\hospital_pablotobonuribe.png"
+                            />
                         </div>
                     </div>
                 </section>
