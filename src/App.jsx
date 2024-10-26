@@ -5,6 +5,7 @@ import PaginaPrincipal from './components/Pagina-principal/Pagina-principal'
 import PaginaCampañas from './components/Pagina-campañas/Pagina-campañas'
 import Formulario from './components/Formulario/Formulario'
 import Crearcampaña from './components/Crearcampaña/Crearcampaña'
+import Acercade from './components/Acercade/Acercade'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('principal')
@@ -19,6 +20,9 @@ function App() {
 
       case 'crearcampaña':
         return <Crearcampaña />
+
+      case 'Acercade':
+        return <Acercade />
         
       case 'principal':
       default:
