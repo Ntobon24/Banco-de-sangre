@@ -1,0 +1,106 @@
+/* Contenedor principal */
+.donate-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .donate-form {
+    width: 65%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .donate-form h2 {
+    color: #e63946;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    background-color: #d3d3d3; 
+    color: black;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #f5f5f5;
+  }
+  
+  .form-group input::placeholder,
+  .form-group select::placeholder {
+    color: #aaa;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #e63946;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #d62828;
+  }
+  
+  /* Sección de información de la campaña */
+  .campaign-info {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .campaign-info h3 {
+    font-size: 18px;
+    color: #e63946;
+    margin-bottom: 15px;
+  }
+  
+  .campaign-info img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .campaign-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .campaign-info p strong {
+    font-size: 16px;
+    color: #333;
+  }
+  

@@ -3,6 +3,8 @@ import './App.css'
 import Header from './components/header/header'
 import PaginaPrincipal from './components/Pagina-principal/Pagina-principal'
 import PaginaCampañas from './components/Pagina-campañas/Pagina-campañas'
+import Formulario from './components/Formulario/Formulario'
+import Crearcampaña from './components/Crearcampaña/Crearcampaña'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('principal')
@@ -11,6 +13,13 @@ function App() {
     switch (currentPage) {
       case 'campañas':
         return <PaginaCampañas />
+
+      case 'donar':
+        return <Formulario />
+
+      case 'crearcampaña':
+        return <Crearcampaña />
+        
       case 'principal':
       default:
         return <PaginaPrincipal />
