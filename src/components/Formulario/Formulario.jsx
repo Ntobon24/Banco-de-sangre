@@ -53,15 +53,6 @@ function Formulario() {
               <button type="submit">ENVIAR</button>
             </form>
           </section>
-        
-          <aside className="campaign-info">
-            <h3>Campaña seleccionada:</h3>
-            <img src="campaña.jpg" alt="Campaña de donación de sangre" />
-            <p><strong>Sangre A+</strong></p>
-            <p>Hospital: Hospital Pablo Tobón Uribe</p>
-            <p>Fecha: 15/09/2024 - 22/09/24</p>
-            <p>5 litros</p>
-          </aside>
         </main>
   );
 };

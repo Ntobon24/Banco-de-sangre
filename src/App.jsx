@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './components/header/header'
+import Header from './components/Header/Header'
 import PaginaPrincipal from './components/Pagina-principal/Pagina-principal'
 import PaginaCampañas from './components/Pagina-campañas/Pagina-campañas'
 import Formulario from './components/Formulario/Formulario'

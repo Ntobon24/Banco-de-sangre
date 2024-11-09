@@ -1,75 +1,52 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from 'C:/Users/Nicolas Tobon R/Desktop/Banco de sangre/Banco de sangre/src/firebaseConfig.js';
 import './Pagina-campañas.css';
 import Tarjetacampaña from '../Tarjeta-campaña/Tarjeta-campaña';
 
 function PaginaCampañas() {
+    const [campañas, setCampañas] = useState([]);
+
+    useEffect(() => {
+        const obtenerCampañas = async () => {
+            try {
+                const querySnapshot = await getDocs(collection(db, 'Campañas'));
+                const campañasData = querySnapshot.docs.map(doc => ({
+                    id: doc.id,
+                    ...doc.data()
+                }));
+                setCampañas(campañasData);
+            } catch (error) {
+                console.error('Error al obtener las campañas:', error);
+            }
+        };
+
+        obtenerCampañas();
+    }, []);
+
     return (
-        <div>  
-            <div>
-                <section class="campaigns-section">
-                    <div class="container">
-                        <h2>Campañas y solicitudes en curso</h2>
-                        <div class="campaign-grid">
-                            <Tarjetacampaña
-                                sangre="A+"
-                                hospital="Pablo Tobón Uribe"
-                                fecha="18/09/2024 - 22/09/2024"
-                                cantidad="5 Litros"
-                                imagen="src\assets\hospital_pablotobonuribe.png"
-                            />
-                            <Tarjetacampaña
-                                sangre="A-"
-                                hospital="Las Américas AUNA"
-                                fecha="20/09/2024 - 24/09/2024"
-                                cantidad="1 Litro"
-                                imagen="src\assets\hospital_pablotobonuribe.png"
-                            />
-                            <Tarjetacampaña
-                                sangre="B+"
-                                hospital="Hospital General de Medellín"
-                                fecha="26/09/2024 - 30/09/2024"
-                                cantidad="15 Litros"
-                                imagen="src\assets\hospital_pablotobonuribe.png"
-                            />
-                            <Tarjetacampaña
-                                sangre="A+"
-                                hospital="Pablo Tobón Uribe"
-                                fecha="18/09/2024 - 22/09/2024"
-                                cantidad="5 Litros"
-                                imagen="src\assets\hospital_pablotobonuribe.png"
-                            />
-                            <Tarjetacampaña
-                                sangre="A-"
-                                hospital="Las Américas AUNA"
-                                fecha="20/09/2024 - 24/09/2024"
-                                cantidad="1 Litro"
-                                imagen="src\assets\hospital_pablotobonuribe.png"
-                            />
-                            <Tarjetacampaña
-                                sangre="B+"
-                                hospital="Hospital General de Medellín"
-                                fecha="26/09/2024 - 30/09/2024"
-                                cantidad="15 Litros"
-                                imagen="src\assets\hospital_pablotobonuribe.png"
-                            />
-                            <Tarjetacampaña
-                                sangre="A-"
-                                hospital="Las Américas AUNA"
-                                fecha="20/09/2024 - 24/09/2024"
-                                cantidad="1 Litro"
-                                imagen="src\assets\hospital_pablotobonuribe.png"
-                            />
-                            <Tarjetacampaña
-                                sangre="B+"
-                                hospital="Hospital General de Medellín"
-                                fecha="26/09/2024 - 30/09/2024"
-                                cantidad="15 Litros"
-                                imagen="src\assets\hospital_pablotobonuribe.png"
-                            />
-                        </div>
+        <div>
+            <section className="campaigns-section">
+                <div className="container">
+                    <h2>Campañas y solicitudes en curso</h2>
+                    <div className="campaign-grid">
+                        {campañas.length > 0 ? (
+                            campañas.map((campaña) => (
+                                <Tarjetacampaña
+                                    key={campaña.id}
+                                    nombre={`${campaña.nombre} ${campaña.apellido}`}
+                                    sangre={campaña.tipoSangre} 
+                                    hospital={campaña.hospital}
+                                    fechaCierre={campaña.fechaCierre}
+
+                                />
+                            ))
+                        ) : (
+                            <p>No hay campañas disponibles en este momento.</p>
+                        )}
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </div>
     );
 }
