@@ -1,4 +1,4 @@
-
+/* Contenedor principal */
 .donate-container {
     display: flex;
     justify-content: space-between;
@@ -11,6 +11,7 @@
     font-family: Arial, sans-serif;
   }
   
+
   .donate-form {
     width: 65%;
     background-color: white;

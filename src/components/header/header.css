@@ -1,8 +1,9 @@
-* {
+body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 header {
   background-color: #E53F3F;
@@ -47,4 +48,36 @@ nav ul li a:hover {
 .auth-links a {
   color: white;
   text-decoration: none;
+}
+
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  object-fit: cover;
+}
+
+.user-avatar:hover {
+  border-color: #e63946;
+}
+
+nav ul li a,
+.auth-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active,
+.auth-links a:hover,
+.auth-links a:focus,
+.auth-links a:active {
+  color: white;
+  text-decoration: none;
+  outline: none; /* Desactiva el contorno azul en navegadores que lo muestran */
 }

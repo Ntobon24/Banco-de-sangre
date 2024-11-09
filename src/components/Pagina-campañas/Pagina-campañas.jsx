@@ -34,11 +34,12 @@ function PaginaCampañas() {
                             campañas.map((campaña) => (
                                 <Tarjetacampaña
                                     key={campaña.id}
+                                    id={campaña.id} // Pasar el id a Tarjetacampaña
                                     nombre={`${campaña.nombre} ${campaña.apellido}`}
                                     sangre={campaña.tipoSangre} 
                                     hospital={campaña.hospital}
                                     fechaCierre={campaña.fechaCierre}
-
+                                    cantidad={campaña.cantidadSangre}
                                 />
                             ))
                         ) : (

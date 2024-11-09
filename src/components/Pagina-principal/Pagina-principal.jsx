@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../header/header';
 import './Pagina-principal.css';
 
 function PaginaPrincipal() {

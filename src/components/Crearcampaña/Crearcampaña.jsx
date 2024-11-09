@@ -16,6 +16,7 @@ function Crearcampaña() {
   const [motivo, setMotivo] = useState("");
   const [prioridad, setPrioridad] = useState("");
   const [fechaCierre, setFechaCierre] = useState("");
+  const [cantidadSangre, setCantidadSangre] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -35,6 +36,7 @@ function Crearcampaña() {
         prioridad,
         fechaSolicitud: new Date().toISOString(), 
         fechaCierre, 
+        cantidadSangre 
       });
 
       
@@ -49,6 +51,7 @@ function Crearcampaña() {
       setMotivo("");
       setPrioridad("");
       setFechaCierre("");
+      setCantidadSangre("");
 
       alert("Campaña creada exitosamente");
     } catch (error) {
@@ -60,7 +63,7 @@ function Crearcampaña() {
   return (
     <main className="donate-container">
       <section className="donate-form">
-        <h2>Buscar donante</h2>
+        <h2>Crear campaña</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="nombre">Nombre:</label>
@@ -186,6 +189,17 @@ function Crearcampaña() {
               <option value="Media">Media</option>
               <option value="Baja">Baja</option>
             </select>
+          </div>
+          <div className="form-group">
+            <label htmlFor="cantidadSangre">Cantidad de sangre necesitada (l):</label>
+            <input
+              type="number"
+              id="cantidadSangre"
+              value={cantidadSangre}
+              onChange={(e) => setCantidadSangre(e.target.value)}
+              placeholder="Ej: 5 litros"
+              required
+            />
           </div>
           <div className="form-group">
             <label htmlFor="fechaCierre">Fecha de cierre:</label>
