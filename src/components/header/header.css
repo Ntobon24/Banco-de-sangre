@@ -81,3 +81,21 @@ nav ul li a:active,
   text-decoration: none;
   outline: none; /* Desactiva el contorno azul en navegadores que lo muestran */
 }
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar el contenido horizontalmente */
+  text-align: center; /* Centrar el texto */
+}
+
+.user-info img {
+  margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+}

@@ -56,6 +56,7 @@ function Header({ setCurrentPage }) {
                 className="user-avatar" 
                 onClick={handleLogout} 
               />
+              <p>Cerrar sesion</p>
             </div>
           ) : (
             <>

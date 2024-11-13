@@ -15,25 +15,25 @@ function RegistrarUsuario() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Verificar si las contraseñas coinciden
+    
     if (password !== confirmPassword) {
       setError("Las contraseñas no coinciden.");
       return;
     }
 
     setLoading(true);
-    setError(""); // Limpiar el error previo
+    setError(""); 
 
     const auth = getAuth();
 
     try {
-      // Crear el usuario con el correo y la contraseña
+    
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
-      // Usuario creado correctamente
+      
       const user = userCredential.user;
 
-      // Almacenar información adicional en Firestore (puedes agregar más campos según lo necesites)
+      
       await addDoc(collection(db, "Usuarios"), {
         uid: user.uid,
         nombre,
@@ -41,7 +41,7 @@ function RegistrarUsuario() {
         createdAt: new Date(),
       });
 
-      // Limpiar los campos del formulario
+      
       setNombre("");
       setEmail("");
       setPassword("");
